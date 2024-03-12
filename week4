@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstite Slider</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li class="item1 active"></li>
+            <li class="item2"></li>
+            <li class="item3"></li>
+        </ol>
+        <div class="carousel-inner" role="listitem">
+        <div class="item active">
+                <img src="https://images3.alphacoders.com/646/64689.jpg" 
+                alt="image1" width="100%" height="100%">
+        </div>
+        <div class="item">
+            <img src="c:\Users\STUDENT\Downloads\batman-the-dark-knight-rises.jpg" 
+            alt="image2" width="100%" height="100%">
+        </div>
+        <div class="item">
+            <img src="https://th.bing.com/th/id/R.af35d676500cd5ac261c29af4dc2ebdf?rik=UpQsdc98lCAxSg&riu=http%3a%2f%2fimages4.fanpop.com%2fimage%2fphotos%2f22600000%2fItachi-Uchiha-itachi-uchiha-22632762-1024-768.jpg&ehk=i5GeJgHiyD8DnIsOMEY50h721FjbDdazChRKLpzodzE%3d&risl=&pid=ImgRaw&r=0" 
+            alt="image3" width="100%" height="100%">
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button">
+        <span class="glyphicon glyphicon-chevron-left" ariahidden="true"></span>
+        <span class="sr-only">Prev</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button">
+        <span class="glyphicon glyphicon-chevron-right" ariahidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    
+</div>
+</div>
+
+       <script>
+        $(document).ready(function(){
+            $("#myCarousel").carousel();
+            $(".item1").click(function(){
+            $("#myCarousel").carousel(0);
+            })
+            $(".item2").click(function(){
+            $("#myCarousel").carousel(1);
+            })
+            $(".item3").click(function(){
+            $("#myCarousel").carousel(2);
+            })
+            $(".left").click(function(){
+            $("#myCarousel").carousel("prev");
+            })
+            $(".right").click(function(){
+            $("#myCarousel").carousel("next");
+            })
+        });
+   </script> 
+</body>
+</html>
